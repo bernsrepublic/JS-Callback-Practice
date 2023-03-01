@@ -3,7 +3,7 @@ move(inventory).to(0, 0);
 
 const character = newImage("assets/green-character/static.gif");
 
-function handleDirectionChange() {
+function handleDirectionChange(direction) {
   if (direction === null) {
     character.src = "assets/green-character/static.gif";
   }

@@ -48,12 +48,12 @@ function move(element) {
       if (e.key === "ArrowDown") {
         direction = "south";
       }
-      callback();
+      callback(direction);
     });
 
     document.addEventListener("keyup", function (e) {
       direction = null;
-      callback();
+      callback(direction);
     });
   }
 
